@@ -160,7 +160,7 @@ def obstacleavoiddrive():
     goforward()
     start = time.time()
     # Drive 5 minutes
-    while start > time.time()-60:  # 300 = 60 seconds * 5
+    while start > time.time() - 300:  # 300 = 60 seconds * 5
         if frontobstacle() < 30:
             stopmotors()
             checkanddrivefront()
